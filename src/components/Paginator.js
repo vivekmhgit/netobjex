@@ -1,24 +1,22 @@
 import React from "react";
 
-const Paginator = ({ itemsPerPage, totalUsers, paginate }) => {
-  const pageNumbers = [];
+const Paginator = ({ itemsPerPage, totalUsers, paginate, currentPage }) => {
   const totPagesReq = Math.ceil(totalUsers / itemsPerPage);
+  const range1 = (currentPage - 1) * itemsPerPage + 1;
+  const range2 = range1 + itemsPerPage - 1;
 
-  for (let i = 1; i <= totPagesReq; i++) {
-    pageNumbers.push(i);
-  }
   return (
-    <nav>
-      <ul>
-        {pageNumbers.map((page) => (
-          <li key={page}>
-            <a onClick={() => paginate(page)} href='!#'>
-              {page}
-            </a>
-          </li>
-        ))}
-      </ul>
-    </nav>
+    <div>
+      {range1}-{range2} of {totalUsers}
+      <span className='link' onClick={() => paginate("prev", totPagesReq)}>
+        {" "}
+        Prev |
+      </span>
+      <span className='link' onClick={() => paginate("next", totPagesReq)}>
+        {" "}
+        Next
+      </span>
+    </div>
   );
 };
 
