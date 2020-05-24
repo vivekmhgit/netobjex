@@ -1,7 +1,94 @@
+.container {
+}
+img {
+  padding: 20px;
+  width: 84px;
+  height: 75px;
+}
+
 .table-card {
-  border: 2px solid grey;
+  background: #ffffff;
+  margin: 10px 110px;
+  box-shadow: 2px 5px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 4px 4px 0px 0px;
+  padding: 20px;
 }
 .table-header {
+  display: flex;
+  flex-direction: row;
+  border: 2px solid #dddfe1;
+  padding: 15px;
+  justify-content: space-around;
+  font-family: SF UI Display;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  color: #464a53;
+}
+.table-item {
+  display: flex;
+  flex-direction: row;
+  font-family: SF UI Display;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  color: #464a53;
+  padding: 20px;
+  justify-content: space-around;
+  border-bottom: 1px solid #dddfe1;
+}
+
+li {
+  list-style-type: none;
+}
+.header {
+  background: #351ca4;
+}
+.header-title {
+  padding: 0px 50px;
+}
+.main-title {
+  font-family: SF UI Display;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 60px;
+  color: white;
+  text-transform: capitalize;
+}
+.sub-title {
+  font-family: SF UI Text;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: capitalize;
+  color: #6ccaa9;
+  line-height: 60px;
 }
 .footer {
+  background: #ffffff;
+  box-shadow: -2px -4px 10px rgba(0, 0, 0, 0.1);
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  color: #949494;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.paginator {
+  cursor: pointer;
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.paginator:hover {
+}
+.link:hover {
+  text-decoration: underline;
+  color: blue;
 }
