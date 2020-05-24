@@ -3,7 +3,8 @@ import React from "react";
 const Paginator = ({ itemsPerPage, totalUsers, paginate, currentPage }) => {
   const totPagesReq = Math.ceil(totalUsers / itemsPerPage);
   const range1 = (currentPage - 1) * itemsPerPage + 1;
-  const range2 = range1 + itemsPerPage - 1;
+  const range2 =
+    currentPage === totPagesReq ? totalUsers : range1 + itemsPerPage - 1;
 
   return (
     <div>

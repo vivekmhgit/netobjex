@@ -1,7 +1,32 @@
+/* This has all styles applied to the app */
+
 .container {
+  width: 100%;
 }
-img {
-  padding: 20px;
+
+.right-logo-area {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-top: 10px;
+  padding-right: 10px;
+  align-items: center;
+}
+.right-logo {
+  width: 47px;
+  height: 47px;
+}
+.right-logo-text {
+  font-family: Roboto Mono;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  color: #ffffff;
+  text-transform: capitalize;
+  padding: 5px;
+}
+.left-logo {
+  padding: 0px 20px;
   width: 84px;
   height: 75px;
 }
@@ -12,6 +37,7 @@ img {
   box-shadow: 2px 5px 20px rgba(0, 0, 0, 0.1);
   border-radius: 4px 4px 0px 0px;
   padding: 20px;
+  min-height: 220px;
 }
 .table-header {
   display: flex;
@@ -39,9 +65,6 @@ img {
   border-bottom: 1px solid #dddfe1;
 }
 
-li {
-  list-style-type: none;
-}
 .header {
   background: #351ca4;
 }
@@ -80,15 +103,19 @@ li {
   justify-content: space-between;
 }
 .paginator {
-  cursor: pointer;
   margin: 20px;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
 }
-.paginator:hover {
-}
+
 .link:hover {
   text-decoration: underline;
   color: blue;
+  cursor: pointer;
+}
+.error-message {
+  display: flex;
+  justify-content: center;
+  text-transform: capitalize;
 }
